@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+.content{
+    width:100%;
+    height:80%;
+    background: url('../iages/bg_1.png') no-repeat;
+    background-size: 100% 100%;
+}
+.logo{
+    width:1.9rem;
+    height:0.91rem;
+    position:absolute;
+    top:1.29rem;
+    left:2.26rem;
+}
+.logo img{
+    width:100%;
+    height:100%;
+}
+.login{
+    width:5.0rem;
+    height:0.95rem;
+    position: absolute;
+    left:0.70rem;
+    top:2.63rem;
+}
+.login img{
+    width: 100%;
+    height: 100%;
+}
+.price{
+    width: 1.44rem;
+    height: 1.37rem;
+    position: absolute;
+    top: 3.73rem;
+    right: 0.22rem;
+}
+.price img{
+    width: 100%;
+    height: 100%;
+}
+.mango_show{
+    width: 6.4rem;
+    height: 5.5rem;
+    position: absolute;
+    top: 4.0rem;
+    
+}
+.mango_show img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.arrow_point{
+    width: 0.41rem;
+    height: 0.72rem;
+    position: absolute;
+    top: 9rem;
+    right: 0.75rem;
+    transform: translate(10deg);
+
+}
+.arrow_point img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250,232,210);
+
+}
