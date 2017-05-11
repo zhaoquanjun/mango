@@ -76,17 +76,32 @@ a{
 .arrow_point{
     width: 0.51rem;
     height: 0.80rem;
-    position: fixed;
+    position: absolute;
     top: 7.4rem;
     left: 5.2rem;
-    animation: slide 1s infinite;
-    -webkit-animation: slide 1s infinite;
+    z-index: 100;
 
 }
 .arrow_point img{
+    position:absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    -webkit-animation:skip 1s infinite;
 }
+@-webkit-keyframes skip{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 0.15rem;
+    }
+    100%{
+        top: 0;
+    }
+}
+
 .btn{
     width: 1.18rem;
     height: 1.1rem;
@@ -139,28 +154,6 @@ a{
     height: 100%;
 }
 
-@keyframes slide{
-    0%{
-        top: 7.4rem;
-    }
-    50%{
-        top: 7.55rem;
-    }
-    100%{
-        top: 7.4rem;
-    }
-}
-@-webkit-keyframes slide{
-    0%{
-        top: 7.4rem;
-    }
-    50%{
-        top: 7.55rem;
-    }
-    100%{
-        top: 7.4rem;
-    }
-}
 @keyframes upDown{
     0%{
         top:0;
@@ -210,7 +203,7 @@ a{
 }
 
 .features_list ul li{
-    width: 3.2rem;
+    width: 4rem;
     height: 0.5rem;
     color: #fff;
     border-radius: 0.2rem;
@@ -227,18 +220,13 @@ a{
     left: 0.5rem;
 }
 .features_list ul li:nth-child(2){
-   /* width:2rem;
-    position: absolute;
-    top: 7.8rem;
-    left: 0.3rem;*/
-    height:1rem;
-    width: 1.1rem;
+    width: 2.2rem;
     position: absolute;
     top: 5.4rem;
-    left: 4rem;
+    left: 3.9rem;
 }
 .features_list ul li:nth-child(3){
-    width:2.2rem;
+    width:2.6rem;
     position: absolute;
     top: 8.6rem;
     left: 1.6rem;
@@ -250,27 +238,25 @@ a{
     top: 5.4rem;
     left: 3.8rem;
 }
+.features_list div{   
+    width:0.3rem;
+    height:0.3rem;
+}
 .features_list span{
     display: block;
-    width:0.2rem;
-    height:0.2rem;
+    width: 0.2rem;
+    height: 0.2rem;
     border-radius: 50%;
     background-color: rgb(233,85,19);
-
 }
 .features_list .fir{
     position: absolute;
-    top:5rem;
-    left:1.1rem;
+    top:4.3rem;
+    left:1.8rem;
     animation: fadeInOut 1.5s infinite;
     -webkit-animation: fadeInOut 1.5s infinite;
 }
-.features_list .sec{
-    position: absolute;
-    top:5.4rem;
-    left:1.8rem;
 
-}
 .features_list .thr{
     position: absolute;
     top:6.4rem;
@@ -286,24 +272,23 @@ a{
     -webkit-animation: fadeInOut 1.5s 0.5s infinite;
 }
 .line_point b{
-    color: #30382a;
+    background-color:  #30382a;
+    opacity: 0.8;
     width: 0.03rem;
     /*display: none;*/
 }
 .line_point b:nth-child(1){
     position:absolute;
-    bottom: 6.4rem;
-    left: 1.4rem;
+    bottom: 5.8rem;
+    left: 1.9rem;
     height: 0;
-    background-color: #000;
-    transform: skew(-15deg);
+   
 }
 .line_point b:nth-child(2){
     position:absolute;
     top: 4.6rem;
     left: 4.15rem;
     height: 0;
-    background-color: #000;
     transform: skew(30deg);
 }
 /*.line_point b:nth-child(3){
@@ -315,10 +300,10 @@ a{
     transform: skew(-18deg);
 }*/
 .line_point b:nth-child(3){
+    width: 0.04rem;
     position:absolute;
     top: 6.6rem;
     left: 2.68rem;
     height: 0;
-    background-color: #000;
     transform: skew(5deg);
 }

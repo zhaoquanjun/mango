@@ -5,26 +5,36 @@
 }(640);
 
 $('#features_list').on('click',function(e){
+
 	if(e.target.nodeName.toUpperCase() === 'SPAN' && e.target.className.toUpperCase() === 'FIR'){
 		$('.line_point b:first').animate({
-			height:'+=1.3rem'
-		},1000);
+			height:'+=0.6rem'
+		},500);
+		$('#features_list').click(function(){
+			$('.line_point b:first').stop();
+		})
 		setTimeout(function () {
             $('.list li:first').fadeIn(2000);
-        },800)
+        },500)
 
 	}else if(e.target.nodeName.toUpperCase() === 'SPAN' && e.target.className.toUpperCase() === 'THR'){
         $('.line_point b:eq(2)').animate({
             height:'+=2rem'
-        },1000);
+        },600);
+        $('#features_list').click(function(){
+			$('.line_point b:eq(2)').stop();
+		})
         setTimeout(function () {
              $('.list li:eq(2)').fadeIn(1000);
-        },800)
+        },600)
        
 	}else if(e.target.nodeName.toUpperCase() === 'SPAN' && e.target.className.toUpperCase() === 'FOR'){
         $('.line_point b:eq(1)').animate({
             height:'+=0.8rem'
-        },1000);
+        },800);
+        $('#features_list').click(function(){
+			$('.line_point b:eq(1)	').stop();
+		})
         setTimeout(function () {
             $('.list li:eq(1)').fadeIn(1000);
         },800)      
